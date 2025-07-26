@@ -19,7 +19,7 @@ using namespace std;
 }
 
 int main(){
-   string s="AKa"; 
+   string s="AKa4335535335435akas"; 
  
    if(validpalindrom(s)){
     cout<<"TRUE";

@@ -4,7 +4,7 @@
 using namespace std;
 int buyandsell(vector<int>&vec){
     int sz=vec.size();
-    int minprice=INT_MAX,maxprofit=0;
+    int minprice=INT_MAX,maxprofit=INT_MIN;
     for(int i=0;i<sz;i++){
    minprice=min(minprice,vec[i]);
        maxprofit=max(maxprofit,vec[i]-minprice);

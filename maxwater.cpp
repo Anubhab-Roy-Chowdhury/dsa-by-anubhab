@@ -2,7 +2,7 @@
 using namespace std;
 int maxwater(vector<int>&vec){
     int sz=vec.size();
- int left=0,right=sz-1,minht=INT_MAX,maxwater=0;
+ int left=0,right=sz-1,minht=INT_MAX,maxwater=INT_MIN;
      while(left<right){
         minht=min(vec[left],vec[right]);
         maxwater=max(maxwater,(right-left)*minht);

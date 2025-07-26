@@ -17,7 +17,7 @@ void nextper(vector<int>& nums){
 }
 
 int main() {
-    vector<int> nums ={1,2,3};
+    vector<int> nums ={1,2,3,5,4};
     nextper(nums);
     for(int val : nums)
     cout<< val <<" ";

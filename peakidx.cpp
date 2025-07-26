@@ -7,10 +7,10 @@ int peakidx(vector<int>&nums){
     while(low<high){
         int mid=low+(high-low)/2;
        if(nums[mid]<nums[mid+1]){
-        low=mid+1;
+       low=mid+1;
        }
-       else high=mid;
-       if(low==high) return low;
+       else high = mid;
+       if(low == high ) return low;
 }
 }
 
