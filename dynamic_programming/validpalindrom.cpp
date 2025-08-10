@@ -1,0 +1,29 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+// Function to check if a string is a valid palindrome (ignoring non-alphanumeric and case)
+bool validpalindrom(string &s){
+    int i=0,j=s.length()-1;
+    while(i<j){
+        if(i<j && !isalnum(s[i])) i++;
+        else if(i<j && !isalnum(s[j])) j--;
+        if(tolower(s[i])==tolower(s[j])){
+            i++;j--;
+        }
+        else {
+            return false;
+        }
+    }
+    return true;
+}
+
+int main(){
+   string s="AKa4335535335435akas"; 
+   if(validpalindrom(s)){
+    cout<<"TRUE";
+   }
+   else{
+    cout<<"FALSE";
+   }
+    return 0;
+}
